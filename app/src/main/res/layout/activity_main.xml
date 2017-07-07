@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.omgtu.calcactivity.MainActivity">
+
+    <Button
+        android:id="@+id/buttP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="+"
+        android:layout_below="@+id/expression"
+        android:layout_toLeftOf="@+id/buttM"
+        android:layout_toStartOf="@+id/buttM" />
+
+    <EditText
+        android:id="@+id/expression1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/reply"
+        android:layout_alignEnd="@+id/reply" />
+
+    <EditText
+        android:id="@+id/expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/expression1"
+        android:layout_alignBottom="@+id/expression1"
+        android:layout_toRightOf="@+id/reply"
+        android:layout_toEndOf="@+id/reply" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите выражение"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    /*
+
+    <TextView
+        android:id="@+id/reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        android:id="@+id/buttM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_alignBaseline="@+id/buttP"
+        android:layout_alignBottom="@+id/buttP"
+        android:layout_toLeftOf="@+id/reply"
+        android:layout_toStartOf="@+id/reply" />
+
+    <Button
+        android:id="@+id/buttD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttX"
+        android:layout_alignBottom="@+id/buttX"
+        android:layout_toEndOf="@+id/buttX"
+        android:layout_toRightOf="@+id/buttX"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/buttX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttM"
+        android:layout_alignBottom="@+id/buttM"
+        android:layout_toEndOf="@+id/buttM"
+        android:layout_toRightOf="@+id/buttM"
+        android:text="X" />
+
+    <TextView
+        android:id="@+id/same1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:layout_below="@+id/buttM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        android:id="@+id/aktivity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/same1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Button" />
+
+</RelativeLayout>
